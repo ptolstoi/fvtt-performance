@@ -1,0 +1,10 @@
+{
+  "name": "performance",
+  "title": "Performance Improver",
+  "description": "Renders the canvas only when something changes.",
+  "author": "Antodias",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.7",
+  "url": "https://github.com/ptolstoi/fvtt",
+  "scripts": ["main.js"]
+}
