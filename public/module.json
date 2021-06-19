@@ -6,7 +6,7 @@
   "version": "1.1.0",
   "minimumCoreVersion": "0.8.7",
   "compatibleCoreVersion": "0.8.7",
-  "url": "https://github.com/ptolstoi/fvtt",
+  "url": "https://github.com/ptolstoi/fvtt-performance",
   "download": "https://dnd.6pt.de/performance/%VERSION%.zip",
   "manifest": "https://dnd.6pt.de/performance/module.json"
 }
