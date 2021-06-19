@@ -1,0 +1,25 @@
+{
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:major": "bump-version --increase major public/module.json && yarn build",
+    "build:minor": "bump-version --increase minor public/module.json && yarn build",
+    "build:patch": "bump-version public/module.json && yarn build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/archiver": "^5.1.0",
+    "archiver": "^5.3.0",
+    "semver": "^7.3.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.7",
+    "vite-fvtt-module-dev": "^1.0.1"
+  },
+  "module": "src/main.ts",
+  "dependencies": {
+    "@league-of-foundry-developers/foundry-vtt-types": "^0.7.10-0",
+    "@types/node": "^15.12.4"
+  }
+}
