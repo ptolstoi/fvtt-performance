@@ -75,6 +75,26 @@ Hooks.once("canvasReady", () => {
       }
     });
 
+    window.addEventListener("touchstart", () => {
+      isMouseDown = true;
+      app?.start();
+    });
+
+    window.addEventListener("touchup", () => {
+      isMouseDown = false;
+      pauseRenderingIn(1000);
+    });
+
+    window.addEventListener("pointerdown", () => {
+      isMouseDown = true;
+      app?.start();
+    });
+
+    window.addEventListener("pointerup", () => {
+      isMouseDown = false;
+      pauseRenderingIn(1000);
+    });
+
     game.socket.on("modifyEmbeddedDocument", pauseRendering);
     game.socket.on("userActivity", pauseRendering);
 
